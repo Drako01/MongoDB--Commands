@@ -227,5 +227,257 @@ db.productos.find(
 <https://regexr.com/>
 <https://regex101.com/>
 
+---
 
 
+
+
+# Repasamos:
+
+## Levantar el servidor local
+
+```sh
+mongod
+```
+
+> Otra manera de levantar el servidor local
+
+```sh
+mongod --dbpath="D:\_courses\62313.mongo.db.fundamentos\clase.01\db-62313"
+```
+
+## Conectar al servidor local.
+Se conecta por defecto a esta URI: <mongodb://127.0.0.1:27017/>
+
+```sh
+mongosh
+``` 
+
+## Mostrar DBs
+
+```sh
+show dbs
+```
+
+## Listar collections dentro de DB
+
+```sh
+show collections
+```
+
+## Para saber en que collections estoy parado.
+
+```sh
+db
+```
+
+## find(): Me permite busqueadas a partir filtros
+
+```sh
+db.usuarios.find({nombre: /o$/}) # Todos los que terminan con o
+```
+
+```sh
+db.usuarios.find({nombre: /^A/}) # Todos los que empiezan con A
+```
+
+> Ejemplo de uso con $regex
+
+```sh
+const search = 'A'
+```
+
+```sh
+db.usuarios.find(
+    {
+        nombre: {
+            $regex: `^${search}`,
+            $options: 'i' # No es obligatorio pero le puedo pasar optiones (Flags)
+        }
+    }
+)
+```
+
+# Logical Query Operators
+
+<https://www.mongodb.com/docs/manual/reference/operator/query/and/>
+
+## $and (Operador Y lógico)
+
+```sh
+db.usuarios.find(
+    {
+        $and: [
+            {nombre: 'Adrian'},
+            {edad: 23}
+        ]
+    }
+) # Si los patrones de búsqueda se cumplen va a mostrar los documentos que cumplen con ambas
+```
+
+## $or (Operador O lógico)
+
+```sh
+db.usuarios.find(
+    {
+        $or: [
+            {nombre: 'Adrian'},
+            {edad: 27}
+        ]
+    }
+) # Busca uno u otro de los patrones. No necesariamente se tienen que cumplir ambos patrones
+```
+
+# Comparison Query Operators
+
+## $gt: Más grande que...
+
+<https://www.mongodb.com/docs/manual/reference/operator/query/gt/>
+
+```sh
+db.usuarios.find(
+    {
+        edad: { $gt: 29 }
+    }
+) # Busca en el field edad los mayores a 29
+```
+
+## $gte: Más grande o igual que...
+
+```sh
+db.usuarios.find(
+    {
+        edad: { $gt: 29 }
+    }
+) # Busca en el field edad los mayores e iguales a 29
+```  
+
+## lt: Menor a...
+
+```sh
+db.usuarios.find(
+    {
+        edad: { $lt: 29 }
+    }
+) # Busca en el field edad los menores a 29
+```
+
+## lte: Menor o igual a...
+
+```sh
+db.usuarios.find(
+    {
+        edad: { $lte: 29 }
+    }
+) # Busca en el field edad los menores o iguales a 29
+```
+
+## $ne: Distinto del patrón que búsque
+
+```sh
+db.usuarios.find( 
+    { 
+        nombre: {
+            $ne: 'Gabriel' 
+        } 
+    }
+)
+```
+
+## $in: Todos los valores que le indique dentro de un array...
+
+```sh
+db.usuarios.find( 
+    { 
+        edad: {
+            $in: [24, 27, 26]
+        } 
+    }
+)
+```
+
+## $nin: Todos los valores contrarios a lo que le indique dentro de un array...
+
+```sh
+db.usuarios.find( 
+    { 
+        edad: {
+            $nin: [24, 27, 26]
+        } 
+    }
+)
+```
+
+## sort(): Ordenamiento
+
+```sh
+db.usuarios.find({}).sort(
+    {
+        nombre: -1 # Todos los documentos ordenados de la z-a
+    }
+)
+```
+
+```sh
+db.usuarios.find({}).sort(
+    {
+        nombre: 1 # Todos los documentos ordenados de la a-z
+    }
+)
+```
+
+> Caso de uso: Todos los documentos mayores a 26 ordenados de menor a mayor
+
+```sh
+db.usuarios.find(
+    {
+        edad: {
+            $gte: 26
+        }
+    }
+).sort(
+        {
+            edad: 1
+        }
+    )
+```
+
+## limit(): Me permite limitar la cantida de documentos filtrados.
+
+```sh
+db.usuarios.find({}).limit(3)
+```
+
+## skip(): Me permite descartar una cantidad de documento elegida.
+
+```sh
+db.usuarios.find({}).skip(3)
+```
+
+> Caso de uso: Hacer un paginado
+
+```sh
+db.usuarios.find({}).limit(5).skip(0)
+```
+
+# size(): Me cuenta la cantida dd edocumentos que me devuelve el find
+
+```sh
+db.usuarios.find().size()
+```
+
+# countDocuments(): Cantidad de documentos que tengo dentro de una colección
+
+```sh
+db.usuarios.countDocuments()
+```
+
+## find({}, {}): Es que admite un segundo objeto
+
+Nota: Por defecto siempre muestra el ObjectID 
+
+```sh
+db.usuarios.find({}, {edad: 1}) # Me muestra solo la edad con el ObjID. 
+db.usuarios.find({}, {nombre: 1, _id: 0}) # Solo muestra nombre
+db.usuarios.find({}, {edad: 0, _id: 0}) # Solo muestra nombre
+```
