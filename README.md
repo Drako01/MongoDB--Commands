@@ -243,7 +243,7 @@ mongod
 > Otra manera de levantar el servidor local
 
 ```sh
-mongod --dbpath="D:\_courses\62313.mongo.db.fundamentos\clase.01\db-62313"
+mongod --dbpath="D:\mis_bases_de_datos\nombre"
 ```
 
 ## Conectar al servidor local.
