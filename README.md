@@ -1,5 +1,9 @@
 # MongoDB - Comandos Basicos
 
+<p align="center">
+<a href="https://www.mongodb.com/" target="_blank" rel="Drako01"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb.com"  height="40"/> </a>
+</p>
+
 
 ## Mongo Server (MSI)
 
