@@ -1,0 +1,1002 @@
+[
+    {
+        "marca": "Dodge",
+        "modelo": "Ram 3500",
+        "anio": 1997
+    },
+    {
+        "marca": "Suzuki",
+        "modelo": "Esteem",
+        "anio": 2000
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Corvette",
+        "anio": 1958
+    },
+    {
+        "marca": "Mercedes-Benz",
+        "modelo": "S-Class",
+        "anio": 2009
+    },
+    {
+        "marca": "Acura",
+        "modelo": "CL",
+        "anio": 1997
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Thunderbird",
+        "anio": 2006
+    },
+    {
+        "marca": "Honda",
+        "modelo": "Accord",
+        "anio": 1995
+    },
+    {
+        "marca": "Ram",
+        "modelo": "C/V",
+        "anio": 2012
+    },
+    {
+        "marca": "Subaru",
+        "modelo": "Outback",
+        "anio": 2004
+    },
+    {
+        "marca": "Saturn",
+        "modelo": "Ion",
+        "anio": 2006
+    },
+    {
+        "marca": "Lexus",
+        "modelo": "ES",
+        "anio": 2005
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "TundraMax",
+        "anio": 2011
+    },
+    {
+        "marca": "Hyundai",
+        "modelo": "Accent",
+        "anio": 2004
+    },
+    {
+        "marca": "Acura",
+        "modelo": "Legend",
+        "anio": 1992
+    },
+    {
+        "marca": "Mercury",
+        "modelo": "Grand Marquis",
+        "anio": 1997
+    },
+    {
+        "marca": "Lexus",
+        "modelo": "ES",
+        "anio": 2008
+    },
+    {
+        "marca": "Aston Martin",
+        "modelo": "Vantage",
+        "anio": 2007
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "anio": 2011
+    },
+    {
+        "marca": "Subaru",
+        "modelo": "Legacy",
+        "anio": 2010
+    },
+    {
+        "marca": "Buick",
+        "modelo": "Regal",
+        "anio": 2002
+    },
+    {
+        "marca": "Suzuki",
+        "modelo": "Swift",
+        "anio": 1987
+    },
+    {
+        "marca": "Maybach",
+        "modelo": "57",
+        "anio": 2004
+    },
+    {
+        "marca": "Dodge",
+        "modelo": "Spirit",
+        "anio": 1992
+    },
+    {
+        "marca": "Acura",
+        "modelo": "RL",
+        "anio": 1997
+    },
+    {
+        "marca": "Nissan",
+        "modelo": "NV2500",
+        "anio": 2012
+    },
+    {
+        "marca": "Lincoln",
+        "modelo": "Continental",
+        "anio": 1991
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Prius",
+        "anio": 2001
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Corvette",
+        "anio": 2003
+    },
+    {
+        "marca": "Saab",
+        "modelo": "9000",
+        "anio": 1995
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Thunderbird",
+        "anio": 2002
+    },
+    {
+        "marca": "Subaru",
+        "modelo": "Alcyone SVX",
+        "anio": 1994
+    },
+    {
+        "marca": "Mitsubishi",
+        "modelo": "Montero",
+        "anio": 1996
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Sienna",
+        "anio": 2011
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Express",
+        "anio": 2006
+    },
+    {
+        "marca": "Buick",
+        "modelo": "Century",
+        "anio": 1998
+    },
+    {
+        "marca": "Suzuki",
+        "modelo": "Kizashi",
+        "anio": 2010
+    },
+    {
+        "marca": "Kia",
+        "modelo": "Amanti",
+        "anio": 2008
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Astro",
+        "anio": 2005
+    },
+    {
+        "marca": "Dodge",
+        "modelo": "Ram 3500",
+        "anio": 2004
+    },
+    {
+        "marca": "GMC",
+        "modelo": "2500",
+        "anio": 1999
+    },
+    {
+        "marca": "Lexus",
+        "modelo": "ES",
+        "anio": 1996
+    },
+    {
+        "marca": "Volvo",
+        "modelo": "S40",
+        "anio": 2008
+    },
+    {
+        "marca": "Pontiac",
+        "modelo": "G6",
+        "anio": 2005
+    },
+    {
+        "marca": "Volkswagen",
+        "modelo": "Jetta",
+        "anio": 1984
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Cavalier",
+        "anio": 1997
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Taurus",
+        "anio": 1997
+    },
+    {
+        "marca": "Suzuki",
+        "modelo": "SJ",
+        "anio": 1994
+    },
+    {
+        "marca": "Honda",
+        "modelo": "Pilot",
+        "anio": 2007
+    },
+    {
+        "marca": "Suzuki",
+        "modelo": "Swift",
+        "anio": 1997
+    },
+    {
+        "marca": "Acura",
+        "modelo": "Integra",
+        "anio": 1988
+    },
+    {
+        "marca": "GMC",
+        "modelo": "Jimmy",
+        "anio": 1993
+    },
+    {
+        "marca": "Kia",
+        "modelo": "Optima",
+        "anio": 2011
+    },
+    {
+        "marca": "Buick",
+        "modelo": "Lucerne",
+        "anio": 2009
+    },
+    {
+        "marca": "Mazda",
+        "modelo": "Protege",
+        "anio": 2000
+    },
+    {
+        "marca": "Lamborghini",
+        "modelo": "Diablo",
+        "anio": 1999
+    },
+    {
+        "marca": "Mercedes-Benz",
+        "modelo": "G-Class",
+        "anio": 2002
+    },
+    {
+        "marca": "Volvo",
+        "modelo": "XC90",
+        "anio": 2012
+    },
+    {
+        "marca": "Saturn",
+        "modelo": "S-Series",
+        "anio": 1995
+    },
+    {
+        "marca": "Mercury",
+        "modelo": "Cougar",
+        "anio": 1993
+    },
+    {
+        "marca": "Mercedes-Benz",
+        "modelo": "CL-Class",
+        "anio": 2003
+    },
+    {
+        "marca": "Volkswagen",
+        "modelo": "Golf",
+        "anio": 1976
+    },
+    {
+        "marca": "Daewoo",
+        "modelo": "Nubira",
+        "anio": 2000
+    },
+    {
+        "marca": "Audi",
+        "modelo": "A6",
+        "anio": 2008
+    },
+    {
+        "marca": "Infiniti",
+        "modelo": "G35",
+        "anio": 2006
+    },
+    {
+        "marca": "Ford",
+        "modelo": "F150",
+        "anio": 2001
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Impala",
+        "anio": 1994
+    },
+    {
+        "marca": "Lincoln",
+        "modelo": "Navigator",
+        "anio": 2011
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Silverado 3500",
+        "anio": 2001
+    },
+    {
+        "marca": "Pontiac",
+        "modelo": "LeMans",
+        "anio": 1968
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Aveo",
+        "anio": 2008
+    },
+    {
+        "marca": "Audi",
+        "modelo": "RS4",
+        "anio": 2008
+    },
+    {
+        "marca": "Ford",
+        "modelo": "F-Series Super Duty",
+        "anio": 2010
+    },
+    {
+        "marca": "Alfa Romeo",
+        "modelo": "164",
+        "anio": 1992
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Suburban 1500",
+        "anio": 1994
+    },
+    {
+        "marca": "MINI",
+        "modelo": "Cooper",
+        "anio": 2010
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Crown Victoria",
+        "anio": 2004
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Thunderbird",
+        "anio": 1987
+    },
+    {
+        "marca": "Plymouth",
+        "modelo": "Neon",
+        "anio": 1997
+    },
+    {
+        "marca": "Honda",
+        "modelo": "Ridgeline",
+        "anio": 2009
+    },
+    {
+        "marca": "Suzuki",
+        "modelo": "SJ",
+        "anio": 1994
+    },
+    {
+        "marca": "Lexus",
+        "modelo": "ES",
+        "anio": 2001
+    },
+    {
+        "marca": "Mercury",
+        "modelo": "Sable",
+        "anio": 2009
+    },
+    {
+        "marca": "Lincoln",
+        "modelo": "MKS",
+        "anio": 2013
+    },
+    {
+        "marca": "Land Rover",
+        "modelo": "Range Rover",
+        "anio": 1997
+    },
+    {
+        "marca": "Ford",
+        "modelo": "F-Series",
+        "anio": 2008
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Silverado",
+        "anio": 2010
+    },
+    {
+        "marca": "BMW",
+        "modelo": "8 Series",
+        "anio": 1997
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Echo",
+        "anio": 2002
+    },
+    {
+        "marca": "Lexus",
+        "modelo": "LS",
+        "anio": 2001
+    },
+    {
+        "marca": "Buick",
+        "modelo": "LaCrosse",
+        "anio": 2008
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Escort",
+        "anio": 1991
+    },
+    {
+        "marca": "Hyundai",
+        "modelo": "Genesis",
+        "anio": 2010
+    },
+    {
+        "marca": "Oldsmobile",
+        "modelo": "Regency",
+        "anio": 1998
+    },
+    {
+        "marca": "Lincoln",
+        "modelo": "Navigator",
+        "anio": 2001
+    },
+    {
+        "marca": "Volkswagen",
+        "modelo": "Eos",
+        "anio": 2008
+    },
+    {
+        "marca": "Nissan",
+        "modelo": "Frontier",
+        "anio": 2008
+    },
+    {
+        "marca": "Kia",
+        "modelo": "Soul",
+        "anio": 2010
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Tacoma",
+        "anio": 2012
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Tempo",
+        "anio": 1984
+    },
+    {
+        "marca": "GMC",
+        "modelo": "Sierra 2500",
+        "anio": 2003
+    },
+    {
+        "marca": "Cadillac",
+        "modelo": "CTS-V",
+        "anio": 2011
+    },
+    {
+        "marca": "Saab",
+        "modelo": "9-3",
+        "anio": 2007
+    },
+    {
+        "marca": "Subaru",
+        "modelo": "Impreza",
+        "anio": 2010
+    },
+    {
+        "marca": "Acura",
+        "modelo": "RL",
+        "anio": 1999
+    },
+    {
+        "marca": "Mazda",
+        "modelo": "Mazdaspeed 3",
+        "anio": 2007
+    },
+    {
+        "marca": "Buick",
+        "modelo": "LeSabre",
+        "anio": 1988
+    },
+    {
+        "marca": "Ford",
+        "modelo": "E150",
+        "anio": 2007
+    },
+    {
+        "marca": "Infiniti",
+        "modelo": "QX",
+        "anio": 2002
+    },
+    {
+        "marca": "Suzuki",
+        "modelo": "Swift",
+        "anio": 1992
+    },
+    {
+        "marca": "Mazda",
+        "modelo": "RX-8",
+        "anio": 2004
+    },
+    {
+        "marca": "Subaru",
+        "modelo": "Loyale",
+        "anio": 1992
+    },
+    {
+        "marca": "Mercedes-Benz",
+        "modelo": "M-Class",
+        "anio": 2012
+    },
+    {
+        "marca": "Audi",
+        "modelo": "S4",
+        "anio": 2002
+    },
+    {
+        "marca": "Ford",
+        "modelo": "E-Series",
+        "anio": 1986
+    },
+    {
+        "marca": "Volkswagen",
+        "modelo": "Fox",
+        "anio": 1989
+    },
+    {
+        "marca": "Mercury",
+        "modelo": "Grand Marquis",
+        "anio": 1985
+    },
+    {
+        "marca": "Mercedes-Benz",
+        "modelo": "SLR McLaren",
+        "anio": 2007
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Crown Victoria",
+        "anio": 1999
+    },
+    {
+        "marca": "Hyundai",
+        "modelo": "Tiburon",
+        "anio": 2007
+    },
+    {
+        "marca": "Dodge",
+        "modelo": "Nitro",
+        "anio": 2007
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Malibu",
+        "anio": 2003
+    },
+    {
+        "marca": "Suzuki",
+        "modelo": "Daewoo Lacetti",
+        "anio": 2007
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Tercel",
+        "anio": 1997
+    },
+    {
+        "marca": "Bentley",
+        "modelo": "Continental",
+        "anio": 2012
+    },
+    {
+        "marca": "Daihatsu",
+        "modelo": "Rocky",
+        "anio": 1992
+    },
+    {
+        "marca": "Ford",
+        "modelo": "F150",
+        "anio": 1999
+    },
+    {
+        "marca": "GMC",
+        "modelo": "Envoy XL",
+        "anio": 2004
+    },
+    {
+        "marca": "GMC",
+        "modelo": "Yukon",
+        "anio": 1999
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Suburban",
+        "anio": 2007
+    },
+    {
+        "marca": "Pontiac",
+        "modelo": "Bonneville",
+        "anio": 2002
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Focus",
+        "anio": 2003
+    },
+    {
+        "marca": "Volvo",
+        "modelo": "S60",
+        "anio": 2011
+    },
+    {
+        "marca": "Audi",
+        "modelo": "A5",
+        "anio": 2010
+    },
+    {
+        "marca": "Dodge",
+        "modelo": "Avenger",
+        "anio": 1995
+    },
+    {
+        "marca": "Porsche",
+        "modelo": "911",
+        "anio": 1994
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Tundra",
+        "anio": 2008
+    },
+    {
+        "marca": "Mercedes-Benz",
+        "modelo": "SL-Class",
+        "anio": 2009
+    },
+    {
+        "marca": "Jaguar",
+        "modelo": "XK Series",
+        "anio": 2003
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Cavalier",
+        "anio": 2002
+    },
+    {
+        "marca": "Lexus",
+        "modelo": "RX",
+        "anio": 2006
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Corvette",
+        "anio": 2005
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Prius",
+        "anio": 2005
+    },
+    {
+        "marca": "Subaru",
+        "modelo": "Tribeca",
+        "anio": 2009
+    },
+    {
+        "marca": "Land Rover",
+        "modelo": "Range Rover Sport",
+        "anio": 2007
+    },
+    {
+        "marca": "Ford",
+        "modelo": "F350",
+        "anio": 2007
+    },
+    {
+        "marca": "Mitsubishi",
+        "modelo": "Diamante",
+        "anio": 2005
+    },
+    {
+        "marca": "Pontiac",
+        "modelo": "Bonneville",
+        "anio": 1998
+    },
+    {
+        "marca": "Mitsubishi",
+        "modelo": "Truck",
+        "anio": 1994
+    },
+    {
+        "marca": "GMC",
+        "modelo": "Suburban 1500",
+        "anio": 1995
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Corvette",
+        "anio": 2007
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Thunderbird",
+        "anio": 1965
+    },
+    {
+        "marca": "Pontiac",
+        "modelo": "GTO",
+        "anio": 1968
+    },
+    {
+        "marca": "Geo",
+        "modelo": "Tracker",
+        "anio": 1993
+    },
+    {
+        "marca": "Nissan",
+        "modelo": "Pathfinder",
+        "anio": 1997
+    },
+    {
+        "marca": "Subaru",
+        "modelo": "Outback",
+        "anio": 2012
+    },
+    {
+        "marca": "Buick",
+        "modelo": "Regal",
+        "anio": 2011
+    },
+    {
+        "marca": "Lincoln",
+        "modelo": "Continental",
+        "anio": 2001
+    },
+    {
+        "marca": "Dodge",
+        "modelo": "Avenger",
+        "anio": 1995
+    },
+    {
+        "marca": "Audi",
+        "modelo": "100",
+        "anio": 1991
+    },
+    {
+        "marca": "Lexus",
+        "modelo": "LS",
+        "anio": 1991
+    },
+    {
+        "marca": "Porsche",
+        "modelo": "Boxster",
+        "anio": 2001
+    },
+    {
+        "marca": "Mazda",
+        "modelo": "B2600",
+        "anio": 1987
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Tacoma",
+        "anio": 2011
+    },
+    {
+        "marca": "GMC",
+        "modelo": "Sierra 1500",
+        "anio": 2006
+    },
+    {
+        "marca": "Porsche",
+        "modelo": "Panamera",
+        "anio": 2013
+    },
+    {
+        "marca": "Bentley",
+        "modelo": "Arnage",
+        "anio": 2006
+    },
+    {
+        "marca": "Acura",
+        "modelo": "MDX",
+        "anio": 2005
+    },
+    {
+        "marca": "Mercedes-Benz",
+        "modelo": "C-Class",
+        "anio": 2006
+    },
+    {
+        "marca": "Volkswagen",
+        "modelo": "Eurovan",
+        "anio": 2002
+    },
+    {
+        "marca": "Oldsmobile",
+        "modelo": "Intrigue",
+        "anio": 2001
+    },
+    {
+        "marca": "Mazda",
+        "modelo": "626",
+        "anio": 1998
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Sequoia",
+        "anio": 2001
+    },
+    {
+        "marca": "Audi",
+        "modelo": "TT",
+        "anio": 2000
+    },
+    {
+        "marca": "GMC",
+        "modelo": "Savana 1500",
+        "anio": 2000
+    },
+    {
+        "marca": "Mercury",
+        "modelo": "Monterey",
+        "anio": 2004
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Blazer",
+        "anio": 2003
+    },
+    {
+        "marca": "Dodge",
+        "modelo": "Grand Caravan",
+        "anio": 2012
+    },
+    {
+        "marca": "Volkswagen",
+        "modelo": "Routan",
+        "anio": 2011
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Ranger",
+        "anio": 2000
+    },
+    {
+        "marca": "Mercedes-Benz",
+        "modelo": "SLS-Class",
+        "anio": 2012
+    },
+    {
+        "marca": "Pontiac",
+        "modelo": "Firebird",
+        "anio": 2000
+    },
+    {
+        "marca": "Ferrari",
+        "modelo": "612 Scaglietti",
+        "anio": 2006
+    },
+    {
+        "marca": "Lexus",
+        "modelo": "LX",
+        "anio": 2006
+    },
+    {
+        "marca": "Mercury",
+        "modelo": "Tracer",
+        "anio": 1997
+    },
+    {
+        "marca": "Buick",
+        "modelo": "Skylark",
+        "anio": 1989
+    },
+    {
+        "marca": "BMW",
+        "modelo": "Alpina B7",
+        "anio": 2008
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Express 1500",
+        "anio": 2002
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Corvette",
+        "anio": 1968
+    },
+    {
+        "marca": "Audi",
+        "modelo": "A8",
+        "anio": 2007
+    },
+    {
+        "marca": "Volkswagen",
+        "modelo": "GTI",
+        "anio": 1986
+    },
+    {
+        "marca": "Mercury",
+        "modelo": "Cougar",
+        "anio": 1970
+    },
+    {
+        "marca": "Jaguar",
+        "modelo": "XK Series",
+        "anio": 2004
+    },
+    {
+        "marca": "Saab",
+        "modelo": "900",
+        "anio": 1988
+    },
+    {
+        "marca": "Mazda",
+        "modelo": "B-Series",
+        "anio": 2006
+    },
+    {
+        "marca": "Lamborghini",
+        "modelo": "Diablo",
+        "anio": 1996
+    },
+    {
+        "marca": "Buick",
+        "modelo": "Century",
+        "anio": 1987
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Aspire",
+        "anio": 1994
+    },
+    {
+        "marca": "Maybach",
+        "modelo": "57",
+        "anio": 2003
+    },
+    {
+        "marca": "Mercury",
+        "modelo": "Sable",
+        "anio": 1989
+    },
+    {
+        "marca": "Mazda",
+        "modelo": "Tribute",
+        "anio": 2003
+    }
+]

@@ -481,3 +481,337 @@ db.usuarios.find({}, {edad: 1}) # Me muestra solo la edad con el ObjID.
 db.usuarios.find({}, {nombre: 1, _id: 0}) # Solo muestra nombre
 db.usuarios.find({}, {edad: 0, _id: 0}) # Solo muestra nombre
 ```
+
+
+## Levantar ambiente de desarrollo local
+
+```sh
+mongod
+```
+
+> Si quiero levantar en una carpeta personalizada
+
+```sh
+mongod --dbpath="D:\mis_bases_de_datos\nombre"
+```
+
+## MONGOSH: Cliente para conectarnos a la DB (LOCAL)
+
+```sh
+mongosh
+```
+
+## Para ver las DB disponibles dentro de MONGOSH
+
+```sh
+show dbs
+```
+
+## MONGOSH: Cliente para conectarnos a la DB (REMOTA)
+
+Ir a MONGO ATLAS y buscar en el cluster el botón CONNECT y elegir la opción de conexión MONGOSH
+
+```sh
+mongosh "mongodb+srv://digitalers.2xyfw8q.mongodb.net/<la-base-datos>" --apiVersion 1 --username <su-usuario>
+```
+
+> Ejemplo
+```sh
+mongosh "mongodb+srv://digitalers.2xyfw8q.mongodb.net/mybd" --apiVersion 1 --username mprincipe
+```
+
+![mongosh](img/mongoshatlas.png)
+
+
+## MONGO DB COMPASS
+
+Abro Mongo DB Compass
+
+![mongocompass](img/db.compass.png)
+
+
+![mongocompassnewconecction](img/mongodbcompass.uri.png)
+
+La URI para conectarse:
+
+> LOCAL
+
+mongodb://localhost:27017
+
+> REMOTO
+
+![mongocompassnewconecction](img/mongo.atlas.png)
+
+![mongocompassnewconecction](img/mongoatlas.uri.png)
+
+
+## $exists: Verifica si un field/propiedad existe o no
+
+```sh
+db.usuarios.find( 
+    { 
+        nombre: { 
+            $exists: false # $exists en false me muestra todos los docuemntos que no tengan el field: nombre
+            } 
+    }
+)
+```
+
+```sh
+db.usuarios.find( 
+    { 
+        edad: { 
+            $exists: true # $exists en true me muestra todos los docuemntos que tengan como field: edad
+            } 
+    }
+)
+```
+
+## BORRAR DOCUMENTOS
+
+### deleteOne(): Me permite borrar un documento
+El deleteOne, borra solo el primer documento que encuentre.
+
+**IMPORTANTE**: Siempre hacer un FIND con el filtro que quiero utilziar y luego hacer DELETE
+
+```sh
+db.usuarios.deleteOne(
+    {
+        nombre: 'Gabriel' # Solo borra un usuario que coincida con el nombre Gabriel.
+    }
+)
+```
+
+### deleteMany(): Me permite borrar un documento
+
+```sh
+db.usuarios.deleteMany(
+    { 
+        edad: {
+            $gte: 28 # Borra todos los mayores o iguales de 28 años.
+        } 
+    }
+)
+```
+
+## EDITAR DOCUMENTOS (ACTUALIZAR DOCUMENTOS)
+
+
+### updateOne():  Me permite actualizar un documento
+Actualizar el primer documento que encuentre, si hay más documentos, solo actualiza el primero.
+
+```sh
+db.usuarios.updateOne({<filtro/busqueda>}, {<info-con-la-cual-quiero-actualizar-el-documento>})
+``` 
+
+#### $set: Me permite agregar fields
+
+```sh
+db.usuarios.updateOne(
+    {edad: 24}, 
+    {
+        $set: {
+            activo: true
+        }
+    }
+) # Busca persona una persona con la edad: 24 y la actualiza
+```
+
+### updateMany(): Me permite actualizar varios documentos
+
+```sh
+db.usuarios.updateMany(
+    {}, 
+    {
+        $set: {
+            activo: true,
+        }
+    }
+) # Sin filtro, intervengo sobre todos los documentos. (Le agrego el field: activo en true)
+```
+
+```sh
+db.usuarios.updateMany(
+    {}, 
+    {
+        $set: {
+            altura: 1.7,
+            peso: 85
+        }
+    }
+) # Le agrego a todos los documentos, los fields altura y peso
+```
+
+> Otro ejemplo
+
+```sh
+db.usuarios.updateMany(
+    {
+        _id: ObjectId("6381528166a059a9557820aa")
+    }, 
+    {
+        $set: {
+            activo: false, 
+            altura: 1.8, 
+            peso: 95
+        }
+    }
+) # Filtra por Obj ID y le actualiza los fields.
+```
+
+#### $unset: Me permite remover fields
+
+```sh
+db.usuarios.updateOne(
+    {
+        _id: ObjectId("6381528166a059a9557820aa")
+    }, 
+    {
+        $unset: {
+            peso: 95
+        }
+    }
+) # Le quito el field peso a un documento en particular
+``` 
+
+## MONGO DATABASE TOOLS
+
+### MONGODUMP
+Crear un backup de mis bases de datos y colecciones
+
+<https://www.mongodb.com/docs/database-tools/mongodump/>
+
+```sh
+mongodump --db <base-de-datos>
+```
+
+> Ejemplo
+
+```sh
+mongodump --db mybd
+```
+
+## BORRAR COLECCION
+
+```sh
+db.<nombre-coleccion>.drop
+```
+
+> Ejemplo
+
+```sh
+use mybd
+db.usuarios.drop()
+```
+## MONGO RESTORE
+Nos permite recuperar una backup desde la carpeta **dump**
+
+<https://www.mongodb.com/docs/database-tools/mongorestore/>
+
+```sh
+mongorestore --nsInclude=<nombre-base-datos>.<coleccion> <carpeta-donde-tengo-los-dump>
+```
+
+```sh
+mongorestore --db mybd dump\mybd
+mongorestore --nsInclude=mybd.usuarios dump
+mongorestore --nsInclude=mybd.* dump # Recupero de la DB mybd. Todas las colecciones
+```
+
+## MONGO IMPORT
+
+```sh
+mongoimport --db=mybd --collection=mock --jsonArray --file MOCK_DATA.json
+```
+
+
+
+## Levantar el servidor MONGODB
+
+```sh
+mongod
+```
+
+> Levantar MONGODB en un directorio particular
+
+```sh
+mongod --dbpath="./db-62313"
+```
+
+## Se conectan al servidor MONGODB
+
+```sh
+mongosh
+```
+
+> Conectarme a MONGO ATLAS
+
+```sh
+mongosh "mongodb+srv://digitalers.2xyfw8q.mongodb.net/edit" --apiVersion 1 --username mprincipe
+```
+
+
+## Conectarse vía extensión de VSC
+
+* MongoDB for VS Code
+
+
+## Conocer la base de datos que tengo activa
+
+```sh
+db
+```
+
+## MONGO RESTORE
+
+```sh
+mongorestore --nsInclude=<nombre-base-datos>.<collection> <carpeta-donde-tengo-los-dump>
+```
+
+### Ejemplo:
+
+```sh
+mongorestore --nsInclude=mybd.* dump # Todas las colecciones de DB, mybd
+```
+
+## MONGO IMPORT
+
+```sh
+mongoimport --db=mybd --collection=autos --jsonArray --file MOCK_DATA.json
+```
+
+> Si no es un json que tiene un array
+
+```sh
+mongoimport --db=mybd --collection=autos --file personas.json
+``` 
+
+# MOCK
+Me permite generar json para utilizar de prueba en mis aplicaciones
+
+<https://www.mockaroo.com/>
+<https://mockapi.io/projects>
+
+## Bajar desde un endpoint un json
+
+```sh
+wget -O personas.json https://615d8b5212571a00172076ba.mockapi.io/personas
+```
+
+## CURSORES
+El cursor es un elemento que me permite ir obteniendo todos los documentos de una búsqueda, no en forma completa, sino de a paquete de documentos. El cursor una vez consumido, no tiene más información. Se agota!
+
+```sh
+let cursor = db.personas.find()
+cursor.forEach(function(d) { print(d) }) # EN ALGUNAS VERSIONES ANTIGUAS NO REPRESENTE LA INFO
+cursor.forEach(function(d) { printjson(d) })
+cursor.forEach(function(d) { printjson(tojson(d)) }) # DEPRECADO PARA LAS ULTIMAS VERSIONES
+cursor.forEach(printjson) # DEPRECADO PARA LAS ULTIMAS VERSIONES
+``` 
+
+## Cargando un archivo de query
+
+```sh
+load('cmd0.js')
+``` 
+
