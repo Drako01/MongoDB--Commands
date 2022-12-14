@@ -524,7 +524,7 @@ mongosh "mongodb+srv://digitalers.2xyfw8q.mongodb.net/<la-base-datos>" --apiVers
 mongosh "mongodb+srv://digitalers.2xyfw8q.mongodb.net/mybd" --apiVersion 1 --username mprincipe
 ```
 
-![mongosh](img/mongoshatlas.png)
+
 
 
 ## MONGO DB COMPASS
