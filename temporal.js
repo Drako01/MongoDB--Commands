@@ -45,8 +45,8 @@ db.usuarios.insertMany(
 db.usuarios.find(
     {
         $and: [
-            {nombre: 'Adrian'},
-            {edad: 20}
+            { nombre: 'Adrian' },
+            { edad: 20 }
         ]
     }
 )
@@ -55,8 +55,8 @@ db.usuarios.find(
 db.usuarios.find(
     {
         $or: [
-            {nombre: 'Adrian'},
-            {edad: 27}
+            { nombre: 'Adrian' },
+            { edad: 27 }
         ]
     }
 )

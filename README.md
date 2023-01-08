@@ -4,7 +4,6 @@
 <a href="https://www.mongodb.com/" target="_blank" rel="Drako01"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb.com"  width="200" height="200"/> </a>
 </p>
 
-
 ## Mongo Server (MSI)
 
 <https://www.mongodb.com/es>
@@ -49,12 +48,9 @@ Siguiente, siguiente...
 
 ![arqui-pc](./_ref/arquitecturaPc.png)
 
-
-
 ## Verificar que mi ambiente este OK
 
 ### MongoD (Servidor)
-
 
 ```sh
 mongod --version # verifico que mi servidor instalado y configurado
@@ -102,9 +98,10 @@ mongod
 mongod --dbpath="D:\mis_bases_de_datos\nombre"
 ```
 
-
 ## Cliente para conectar al servidor
+
 Acuerdense que tiene que estar levantado el servidor **mongod**
+
 ```sh
 mongosh
 ```
@@ -118,7 +115,6 @@ Using MongoDB:          6.0.2
 Using Mongosh:          1.5.4
 ```
 
-
 ## Drivers para las diferentes tecnologías
 
 <https://www.mongodb.com/docs/drivers/>
@@ -130,7 +126,6 @@ Using Mongosh:          1.5.4
 ## Collections and Documents
 
 ![collections](./_ref/collections.svg)
-
 
 # Interactuando con la DB
 
@@ -150,6 +145,7 @@ use db-mongo
 **Nota**: Tener en cuenta que la base de datos se crea en memoria hasta que no se crea alguna colección.
 
 ## Crear una colección
+
 Nota: Tengo que estar posicionado dentro de la DB. A la cual le quiero agregar una colección
 
 ```sh
@@ -182,13 +178,13 @@ db.productos.insertMany(
 ```
 
 # OBJECTID
+
 Cada vez que inserto un documento, se crea automaticamente el ObjectID. Este filed es único. No se repite.
 
 <https://www.mongodb.com/docs/manual/reference/method/ObjectId/>
 
 > Conversor de ObjectID a Timestamp
-<https://nddapp.com/object-id-to-timestamp-converter.html>
-
+> <https://nddapp.com/object-id-to-timestamp-converter.html>
 
 ## find(): Listo todos los documentos de una colección o con un objeto filtro a traves de un patrón.
 
@@ -224,17 +220,12 @@ db.productos.find(
 )
 ```
 
-
-
 # REGEXP o REGEX (Expresiones regulares | regular expression)
 
 <https://regexr.com/>
 <https://regex101.com/>
 
 ---
-
-
-
 
 # Repasamos:
 
@@ -251,11 +242,12 @@ mongod --dbpath="D:\mis_bases_de_datos\nombre"
 ```
 
 ## Conectar al servidor local.
+
 Se conecta por defecto a esta URI: <mongodb://127.0.0.1:27017/>
 
 ```sh
 mongosh
-``` 
+```
 
 ## Mostrar DBs
 
@@ -354,7 +346,7 @@ db.usuarios.find(
         edad: { $gt: 29 }
     }
 ) # Busca en el field edad los mayores e iguales a 29
-```  
+```
 
 ## lt: Menor a...
 
@@ -379,11 +371,11 @@ db.usuarios.find(
 ## $ne: Distinto del patrón que búsque
 
 ```sh
-db.usuarios.find( 
-    { 
+db.usuarios.find(
+    {
         nombre: {
-            $ne: 'Gabriel' 
-        } 
+            $ne: 'Gabriel'
+        }
     }
 )
 ```
@@ -391,11 +383,11 @@ db.usuarios.find(
 ## $in: Todos los valores que le indique dentro de un array...
 
 ```sh
-db.usuarios.find( 
-    { 
+db.usuarios.find(
+    {
         edad: {
             $in: [24, 27, 26]
-        } 
+        }
     }
 )
 ```
@@ -403,11 +395,11 @@ db.usuarios.find(
 ## $nin: Todos los valores contrarios a lo que le indique dentro de un array...
 
 ```sh
-db.usuarios.find( 
-    { 
+db.usuarios.find(
+    {
         edad: {
             $nin: [24, 27, 26]
-        } 
+        }
     }
 )
 ```
@@ -478,14 +470,13 @@ db.usuarios.countDocuments()
 
 ## find({}, {}): Es que admite un segundo objeto
 
-Nota: Por defecto siempre muestra el ObjectID 
+Nota: Por defecto siempre muestra el ObjectID
 
 ```sh
-db.usuarios.find({}, {edad: 1}) # Me muestra solo la edad con el ObjID. 
+db.usuarios.find({}, {edad: 1}) # Me muestra solo la edad con el ObjID.
 db.usuarios.find({}, {nombre: 1, _id: 0}) # Solo muestra nombre
 db.usuarios.find({}, {edad: 0, _id: 0}) # Solo muestra nombre
 ```
-
 
 ## Levantar ambiente de desarrollo local
 
@@ -520,19 +511,16 @@ mongosh "mongodb+srv://digitalers.2xyfw8q.mongodb.net/<la-base-datos>" --apiVers
 ```
 
 > Ejemplo
+
 ```sh
 mongosh "mongodb+srv://digitalers.2xyfw8q.mongodb.net/mybd" --apiVersion 1 --username mprincipe
 ```
-
-
-
 
 ## MONGO DB COMPASS
 
 Abro Mongo DB Compass
 
 ![mongocompass](img/db.compass.png)
-
 
 ![mongocompassnewconecction](img/mongodbcompass.uri.png)
 
@@ -548,25 +536,24 @@ mongodb://localhost:27017
 
 ![mongocompassnewconecction](img/mongoatlas.uri.png)
 
-
 ## $exists: Verifica si un field/propiedad existe o no
 
 ```sh
-db.usuarios.find( 
-    { 
-        nombre: { 
+db.usuarios.find(
+    {
+        nombre: {
             $exists: false # $exists en false me muestra todos los docuemntos que no tengan el field: nombre
-            } 
+            }
     }
 )
 ```
 
 ```sh
-db.usuarios.find( 
-    { 
-        edad: { 
+db.usuarios.find(
+    {
+        edad: {
             $exists: true # $exists en true me muestra todos los docuemntos que tengan como field: edad
-            } 
+            }
     }
 )
 ```
@@ -574,6 +561,7 @@ db.usuarios.find(
 ## BORRAR DOCUMENTOS
 
 ### deleteOne(): Me permite borrar un documento
+
 El deleteOne, borra solo el primer documento que encuentre.
 
 **IMPORTANTE**: Siempre hacer un FIND con el filtro que quiero utilziar y luego hacer DELETE
@@ -590,29 +578,29 @@ db.usuarios.deleteOne(
 
 ```sh
 db.usuarios.deleteMany(
-    { 
+    {
         edad: {
             $gte: 28 # Borra todos los mayores o iguales de 28 años.
-        } 
+        }
     }
 )
 ```
 
 ## EDITAR DOCUMENTOS (ACTUALIZAR DOCUMENTOS)
 
+### updateOne(): Me permite actualizar un documento
 
-### updateOne():  Me permite actualizar un documento
 Actualizar el primer documento que encuentre, si hay más documentos, solo actualiza el primero.
 
 ```sh
 db.usuarios.updateOne({<filtro/busqueda>}, {<info-con-la-cual-quiero-actualizar-el-documento>})
-``` 
+```
 
 #### $set: Me permite agregar fields
 
 ```sh
 db.usuarios.updateOne(
-    {edad: 24}, 
+    {edad: 24},
     {
         $set: {
             activo: true
@@ -625,7 +613,7 @@ db.usuarios.updateOne(
 
 ```sh
 db.usuarios.updateMany(
-    {}, 
+    {},
     {
         $set: {
             activo: true,
@@ -636,7 +624,7 @@ db.usuarios.updateMany(
 
 ```sh
 db.usuarios.updateMany(
-    {}, 
+    {},
     {
         $set: {
             altura: 1.7,
@@ -652,11 +640,11 @@ db.usuarios.updateMany(
 db.usuarios.updateMany(
     {
         _id: ObjectId("6381528166a059a9557820aa")
-    }, 
+    },
     {
         $set: {
-            activo: false, 
-            altura: 1.8, 
+            activo: false,
+            altura: 1.8,
             peso: 95
         }
     }
@@ -669,18 +657,19 @@ db.usuarios.updateMany(
 db.usuarios.updateOne(
     {
         _id: ObjectId("6381528166a059a9557820aa")
-    }, 
+    },
     {
         $unset: {
             peso: 95
         }
     }
 ) # Le quito el field peso a un documento en particular
-``` 
+```
 
 ## MONGO DATABASE TOOLS
 
 ### MONGODUMP
+
 Crear un backup de mis bases de datos y colecciones
 
 <https://www.mongodb.com/docs/database-tools/mongodump/>
@@ -707,7 +696,9 @@ db.<nombre-coleccion>.drop
 use mybd
 db.usuarios.drop()
 ```
+
 ## MONGO RESTORE
+
 Nos permite recuperar una backup desde la carpeta **dump**
 
 <https://www.mongodb.com/docs/database-tools/mongorestore/>
@@ -727,8 +718,6 @@ mongorestore --nsInclude=mybd.* dump # Recupero de la DB mybd. Todas las colecci
 ```sh
 mongoimport --db=mybd --collection=mock --jsonArray --file MOCK_DATA.json
 ```
-
-
 
 ## Levantar el servidor MONGODB
 
@@ -754,11 +743,9 @@ mongosh
 mongosh "mongodb+srv://digitalers.2xyfw8q.mongodb.net/edit" --apiVersion 1 --username mprincipe
 ```
 
-
 ## Conectarse vía extensión de VSC
 
-* MongoDB for VS Code
-
+- MongoDB for VS Code
 
 ## Conocer la base de datos que tengo activa
 
@@ -788,9 +775,10 @@ mongoimport --db=mybd --collection=autos --jsonArray --file MOCK_DATA.json
 
 ```sh
 mongoimport --db=mybd --collection=autos --file personas.json
-``` 
+```
 
 # MOCK
+
 Me permite generar json para utilizar de prueba en mis aplicaciones
 
 <https://www.mockaroo.com/>
@@ -803,6 +791,7 @@ wget -O personas.json https://615d8b5212571a00172076ba.mockapi.io/personas
 ```
 
 ## CURSORES
+
 El cursor es un elemento que me permite ir obteniendo todos los documentos de una búsqueda, no en forma completa, sino de a paquete de documentos. El cursor una vez consumido, no tiene más información. Se agota!
 
 ```sh
@@ -811,10 +800,10 @@ cursor.forEach(function(d) { print(d) }) # EN ALGUNAS VERSIONES ANTIGUAS NO REPR
 cursor.forEach(function(d) { printjson(d) })
 cursor.forEach(function(d) { printjson(tojson(d)) }) # DEPRECADO PARA LAS ULTIMAS VERSIONES
 cursor.forEach(printjson) # DEPRECADO PARA LAS ULTIMAS VERSIONES
-``` 
+```
 
 ## Cargando un archivo de query
 
 ```sh
 load('cmd0.js')
-``` 
+```
