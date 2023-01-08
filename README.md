@@ -818,4 +818,3 @@ cursor.forEach(printjson) # DEPRECADO PARA LAS ULTIMAS VERSIONES
 ```sh
 load('cmd0.js')
 ``` 
-
