@@ -13,6 +13,10 @@ db.usuarios.insertMany(
             edad: 26
         },
         {
+            nombre: 'Andrea',
+            edad: 29
+        },
+        {
             nombre: 'Daniel',
             edad: 22
         },
