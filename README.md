@@ -668,7 +668,7 @@ db.usuarios.updateOne(
 ) # Le quito el field peso a un documento en particular
 ```
 ```sh
-db.usuarios.updateOne(
+db.usuarios.updateMany(
     { },
     {
         $unset: {
