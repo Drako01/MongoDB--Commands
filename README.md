@@ -667,6 +667,16 @@ db.usuarios.updateOne(
     }
 ) # Le quito el field peso a un documento en particular
 ```
+```sh
+db.usuarios.updateOne(
+    { },
+    {
+        $unset: {
+            peso: ""
+        }
+    }
+) # Le quito el field peso a todos los documentos
+```
 
 ## MONGO DATABASE TOOLS
 
