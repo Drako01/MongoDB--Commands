@@ -820,6 +820,12 @@ cursor.forEach(printjson) # DEPRECADO PARA LAS ULTIMAS VERSIONES
 load('cmd0.js')
 ```
 
+
+---
+
+## [Autor: Alejandro Di Stefano](https://github.com/Drako01)
+
+
 ----
 
 
